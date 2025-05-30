@@ -2,43 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width='device-width', initial-scale=1.0">
-  <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--CSS-->
+  <link rel = "stylesheet" href="style.css">
+ 
+  <title>Clock</title>
 </head>
-<body style="background-color: black;">
-  <!--DIV1-->
-  <div style="height: 90vh; background-color: turquoise; width: 60vw; margin: 100px; margin-left: 230px;">
-    <!--CLOCK-->
-    <div style="display:flex; align-items: center; justify-content: center;">
-      <div id ="clock" style ="font-size: 100px;padding-top: 60px;"></div> 
+<body>
+
+  <div id = "mainDiv">
+  
+    <!--Clock-->
+    <div id="div1">
+      <div id ="clock">Clock</div>
     </div>
-    <div style = "display:flex; align-items: center; justify-content: center; padding-top: 20px;">
+    
+    <!--Set Alarm-->
+    <div id="div2" style = "padding-top: 3%; padding-bottom: 3%;">
       <!--ADD ALARM-->
-      <button style="font-size: 50px; border-radius: 20px;"> SET ALARM</button>
+      <button id = "setAlarm"> SET ALARM</button>
     </div>
-    <div style="align-items:center;justify-content:center;">
-      <div style="display:flex; padding-left: 260px; padding-top: 30px;">
-        <h3 style="padding-right: 20px;">ALARM 1</h3>
-        <button style="margin-right: 20px; padding: 10px; border-radius: 50px; background-color: green;">Update</button>
-        <button style="border-radius: 80px; background-color: burlywood;">Delete</button>
+    <!-- Hidden input field and submit button -->
+    <input type="time" id="alarmInput" style="display: none;">
+    <button id="submitAlarm" style="display: none;">Confirm Alarm</button>
+
+    <!--Alarms-->
+    <div id="div3">
+
+      <!--Alarm1-->
+      <div id="alarm1">
+        <h3 id = "a1">ALARM 1</h3>
+        <button id = "update1">Update</button>
+        <button id = "del1">Delete</button>
       </div>
-      <div style="display:flex; padding-left: 260px; padding-top: 10px">
-        <h3 style="padding-right: 20px;">ALARM 2</h3>
-        <button style="margin-right: 20px; padding: 10px; border-radius: 50px; background-color: green;">Update</button>
-        <button style="border-radius: 80px; background-color: burlywood;">Delete</button>
+
+      <!--Alarm2-->
+      <div id="alarm2">
+        <h3 id = "a2">ALARM 2</h3>
+        <button id = "update2">Update</button>
+        <button id = "del2">Delete</button>
       </div>
-      <div style="display:flex; padding-left: 260px; padding-top: 10px">
-        <h3 style="padding-right: 20px;">ALARM 3</h3>
-        <button id="btn" style="margin-right: 20px; padding: 10px; border-radius: 50px; background-color: green;">Update</button>
-        <button id="delbtn" style="border-radius: 80px; background-color: burlywood;">Delete</button>
+
+      <!--Alarm3-->
+      <div id="alarm3">
+        <h3 id = "a3">ALARM 3</h3>
+        <button id = "update3">Update</button>
+        <button id="del3">Delete</button>
       </div>
-      <div style="display:flex; padding-left: 260px; padding-top: 10px">
-        <h3 style="padding-right: 20px;">ALARM 4</h3>
-        <button style="margin-right: 20px; padding: 10px; border-radius: 50px; background-color: green;">Update</button>
-        <button style="border-radius: 80px; background-color: burlywood;">Delete</button>
+
+      <!--Alarm4-->
+      <div id="alarm4">
+        <h3 id = "a4">ALARM 4</h3>
+        <button id = "update4">Update</button>
+        <button id = "del4">Delete</button>
       </div>
+
     </div>
   </div>
-  <script src="clock.js"></script>
+  <!--Javascript-->
+   <script src="clock.js"></script>
 </body>
 </html>

@@ -1,0 +1,65 @@
+body {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#mainDiv {
+  height: 40%; 
+  background-color: turquoise; 
+  width: 350px;
+  margin-top: 5%;
+  padding-bottom: 3%; 
+}
+
+#clock {
+  font-size: clamp(1.2rem, 10vw, 4rem);
+  padding-top: 5%; 
+  color: chocolate;
+}
+
+#div1, #div2  {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#setAlarm {
+  font-size: clamp(1rem, 5vw, 2rem); 
+  border-radius: 20px; 
+  background-color: blue;
+}
+
+#alarm1, #alarm2, #alarm3, #alarm4 {
+  display:flex; 
+ align-items: center;
+ justify-content: center;
+}
+
+#a1, #a2, #a3, #a4 {
+  padding-right: 4%;
+}
+
+#update1, #update2, #update3, #update4 {
+  margin-right: 2%; 
+  padding: 2%; 
+  border-radius: 50px; 
+  background-color: green;
+}
+
+#del1, #del2, #del3, #del4 {
+  border-radius: 80px; 
+  background-color: burlywood;
+  padding: 2%;
+}
+
+
+
+
+
+
+
+
+
+
