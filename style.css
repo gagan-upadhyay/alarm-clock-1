@@ -8,15 +8,20 @@ body {
 #mainDiv {
   height: 40%; 
   background-color: turquoise; 
-  width: 350px;
+  width: 90%;
+  max-width: 350px;
   margin-top: 5%;
   padding-bottom: 3%; 
+  border-radius: 15px;
 }
 
 #clock {
   font-size: clamp(1.2rem, 10vw, 4rem);
   padding-top: 5%; 
+  padding-bottom: 5%;
   color: chocolate;
+  text-align: center;
+  font-weight: bold;
 }
 
 #div1, #div2  {
@@ -29,7 +34,22 @@ body {
   font-size: clamp(1rem, 5vw, 2rem); 
   border-radius: 20px; 
   background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
 }
+
+#alarmInput,
+#submitAlarm,
+#updateAlarm {
+  display: block;
+  margin: 5px auto;
+  width: 50%;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
 
 #alarm1, #alarm2, #alarm3, #alarm4 {
   display:flex; 
